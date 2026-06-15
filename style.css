@@ -926,6 +926,7 @@ section {
     box-shadow: 0 15px 40px rgba(0,0,0,0.6);
     border: 1px solid hsla(270, 80%, 65%, 0.3);
     transition: var(--transition-smooth);
+    display: none; /* Hidden by default for visitors */
 }
 
 .admin-title {

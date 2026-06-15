@@ -1,129 +1,171 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
     // ==================== DEFAULT DATA ====================
     const defaultData = {
-        name: "Saran K",
-        heroDesc: "Driven Computer Science student specialized in Artificial Intelligence & Data Science, with a strong passion for frontend web development, automated workflows, and building smart interactive applications.",
-        socials: {
-            github: "https://github.com/saran7222",
-            linkedin: "https://linkedin.com/in/saran-k-46703b319",
-            email: "saransaran7222@gmail.com",
-            phone: "+918248820949"
-        },
-        about: {
-            location: "Annur, Coimbatore, India",
-            degree: "B.Sc. Computer Science (AI & DS)",
-            email: "saransaran7222@gmail.com",
-            languages: "English, Tamil",
-            title: "Connecting AI & Data Science with Frontend Experiences",
-            desc: "I am currently a II-Year B.Sc. Computer Science student focusing on Artificial Intelligence and Data Science at Dr. SNS Rajalakshmi College of Arts and Science. I bridges the gap between analytical data science and user-centric web design. I enjoy crafting interactive, responsive layouts using HTML5, CSS3, and JavaScript, while exploring AI applications like Computer Vision and Generative AI (using Gemini 2.5 Flash). I am also skilled in designing simple automation workflows in n8n and building functional rapid-prototypes using Python Streamlit. I'm actively seeking frontend developer or software intern roles to bring high energy and technical skills to modern dev environments.",
-            tags: ["Frontend Development", "AI & Data Science", "Workflow Automation (n8n)", "UI/UX (Figma)", "Problem Solving"]
-        },
-        education: [
-            {
-                title: "B.Sc. Computer Science (AI & DS)",
-                subtitle: "Dr. SNS Rajalakshmi College of Arts and Science, Coimbatore",
-                period: "2024 - Present",
-                desc: "Currently in II Year. Developing deep theoretical and practical understanding of Artificial Intelligence, Data Science, Machine Learning, and database concepts like SQL, while active in coding labs and tech events."
-            },
-            {
-                title: "Class XII (HSC)",
-                subtitle: "St. Mary's Convent Matric Hr. Sec. School, Annur",
-                period: "2022 - 2024",
-                desc: "Completed higher secondary education with a focus on Computer Science and Mathematics. Secured 72.0%."
-            },
-            {
-                title: "Class X (SSLC)",
-                subtitle: "St. Mary's Convent Matric Hr. Sec. School, Annur",
-                period: "2020 - 2022",
-                desc: "Secured 69.4% in secondary school board examinations."
-            }
-        ],
-        experience: [
-            {
-                title: "Frontend Developer Intern",
-                subtitle: "Ascentre Technologies",
-                period: "Mar - Apr 2025",
-                desc: "Developed a fully responsive static frontend website for a commercial drone selling platform using HTML5 and CSS3.\nCreated custom, well-structured grid and flexbox layouts to present products and specifications cleanly.\nImplemented cross-device media queries, ensuring compatibility on mobile, tablet, and desktop viewports.\nTested locally, debugged render-blocking layouts, and learned industry-standard practices for UI structure."
-            }
-        ],
-        skills: [
-            {
-                category: "Frontend Development",
-                icon: "bx-code-alt",
-                items: [
-                    { name: "HTML5 & CSS3", value: 90 },
-                    { name: "Responsive Design", value: 85 },
-                    { name: "JavaScript (ES6+)", value: 70 },
-                    { name: "Figma (UI Layouts)", value: 75 }
-                ]
-            },
-            {
-                category: "AI & Data Science",
-                icon: "bx-brain",
-                items: [
-                    { name: "Python Basics", value: 80 },
-                    { name: "Streamlit (Python UIs)", value: 75 },
-                    { name: "SQL (Database Basics)", value: 70 },
-                    { name: "Generative AI Tools", value: 80 }
-                ]
-            },
-            {
-                category: "Tools & Workflows",
-                icon: "bx-cog",
-                items: [
-                    { name: "n8n (Workflow Automation)", value: 75 },
-                    { name: "Git & GitHub", value: 75 },
-                    { name: "Microsoft Excel", value: 80 },
-                    { name: "Problem Solving", value: 80 }
-                ]
-            }
-        ],
-        certifications: [
-            {
-                name: "Enterprise Design Thinking Practitioner",
-                issuer: "IBM",
-                issuerClass: "ibm",
-                desc: "Acquired practical skills in User Research, Ideation, prototyping, and design-led team strategies.",
-                date: "2024"
-            },
-            {
-                name: "Computer Vision App with Azure",
-                issuer: "Microsoft",
-                issuerClass: "microsoft",
-                desc: "Built and integrated image recognition application using Azure Cognitive Vision services APIs.",
-                date: "2025"
-            },
-            {
-                name: "Nano Banana Image Magic with Gemini 2.5 Flash",
-                issuer: "Analytics Vidhya",
-                issuerClass: "av",
-                desc: "Completed hands-on coding training using multimodal capabilities of Gemini 2.5 Flash for image edits and generation.",
-                date: "2025"
-            },
-            {
-                name: "Innovation Ambassador",
-                issuer: "Innovation Cell",
-                issuerClass: "innovation",
-                desc: "Selected to lead and organize technology innovation workshops and collaborative engineering projects.",
-                date: "2024"
-            },
-            {
-                name: "AI for Business Professionals",
-                issuer: "HP",
-                issuerClass: "hp",
-                desc: "Understood strategic implementation frameworks of Artificial Intelligence and Data Analytics inside enterprises.",
-                date: "2025"
-            },
-            {
-                name: "Microsoft Excel Specialist",
-                issuer: "Coursera",
-                issuerClass: "coursera",
-                desc: "Proficient in spreadsheet modeling, pivot tables, data visualization, and data structuring.",
-                date: "2025"
-            }
-        ],
-        web3formsKey: ""
-    };
+    "name":  "Saran K",
+    "heroDesc":  "Driven Computer Science student specialized in Artificial Intelligence \u0026 Data Science, with a strong passion for frontend web development, automated workflows, and building smart interactive applications.",
+    "socials":  {
+                    "github":  "https://github.com/saran7222",
+                    "linkedin":  "https://linkedin.com/in/saran-k-46703b319",
+                    "email":  "saransaran7222@gmail.com",
+                    "phone":  "+918248820949"
+                },
+    "about":  {
+                  "location":  "Annur, Coimbatore, India",
+                  "degree":  "B.Sc. Computer Science (AI \u0026 DS)",
+                  "email":  "saransaran7222@gmail.com",
+                  "languages":  "English, Tamil",
+                  "title":  "Connecting AI \u0026 Data Science with Frontend Experiences",
+                  "desc":  "I am currently a II-Year B.Sc. Computer Science student focusing on Artificial Intelligence and Data Science at Dr. SNS Rajalakshmi College of Arts and Science. I bridges the gap between analytical data science and user-centric web design. I enjoy crafting interactive, responsive layouts using HTML5, CSS3, and JavaScript, while exploring AI applications like Computer Vision and Generative AI (using Gemini 2.5 Flash). I am also skilled in designing simple automation workflows in n8n and building functional rapid-prototypes using Python Streamlit. I\u0027m actively seeking frontend developer or software intern roles to bring high energy and technical skills to modern dev environments.",
+                  "tags":  [
+                               "Frontend Development",
+                               "AI \u0026 Data Science",
+                               "Workflow Automation (n8n)",
+                               "UI/UX (Figma)",
+                               "Problem Solving"
+                           ]
+              },
+    "education":  [
+                      {
+                          "title":  "B.Sc. Computer Science (AI \u0026 DS)",
+                          "subtitle":  "Dr. SNS Rajalakshmi College of Arts and Science, Coimbatore",
+                          "period":  "2024 - Present",
+                          "desc":  "Currently in II Year. Developing deep theoretical and practical understanding of Artificial Intelligence, Data Science, Machine Learning, and database concepts like SQL, while active in coding labs and tech events."
+                      },
+                      {
+                          "title":  "Class XII (HSC)",
+                          "subtitle":  "St. Mary\u0027s Convent Matric Hr. Sec. School, Annur",
+                          "period":  "2022 - 2024",
+                          "desc":  "Completed higher secondary education with a focus on Computer Science and Mathematics. Secured 72.0%."
+                      },
+                      {
+                          "title":  "Class X (SSLC)",
+                          "subtitle":  "St. Mary\u0027s Convent Matric Hr. Sec. School, Annur",
+                          "period":  "2020 - 2022",
+                          "desc":  "Secured 69.4% in secondary school board examinations."
+                      }
+                  ],
+    "experience":  [
+                       {
+                           "title":  "Frontend Developer Intern",
+                           "subtitle":  "Ascentre Technologies",
+                           "period":  "Mar - Apr 2025",
+                           "desc":  "Developed a fully responsive static frontend website for a commercial drone selling platform using HTML5 and CSS3.\nCreated custom, well-structured grid and flexbox layouts to present products and specifications cleanly.\nImplemented cross-device media queries, ensuring compatibility on mobile, tablet, and desktop viewports.\nTested locally, debugged render-blocking layouts, and learned industry-standard practices for UI structure."
+                       }
+                   ],
+    "skills":  [
+                   {
+                       "category":  "Frontend Development",
+                       "icon":  "bx-code-alt",
+                       "items":  [
+                                     {
+                                         "name":  "HTML5 \u0026 CSS3",
+                                         "value":  90
+                                     },
+                                     {
+                                         "name":  "Responsive Design",
+                                         "value":  85
+                                     },
+                                     {
+                                         "name":  "JavaScript (ES6+)",
+                                         "value":  70
+                                     },
+                                     {
+                                         "name":  "Figma (UI Layouts)",
+                                         "value":  75
+                                     }
+                                 ]
+                   },
+                   {
+                       "category":  "AI \u0026 Data Science",
+                       "icon":  "bx-brain",
+                       "items":  [
+                                     {
+                                         "name":  "Python Basics",
+                                         "value":  80
+                                     },
+                                     {
+                                         "name":  "Streamlit (Python UIs)",
+                                         "value":  75
+                                     },
+                                     {
+                                         "name":  "SQL (Database Basics)",
+                                         "value":  70
+                                     },
+                                     {
+                                         "name":  "Generative AI Tools",
+                                         "value":  80
+                                     }
+                                 ]
+                   },
+                   {
+                       "category":  "Tools \u0026 Workflows",
+                       "icon":  "bx-cog",
+                       "items":  [
+                                     {
+                                         "name":  "n8n (Workflow Automation)",
+                                         "value":  75
+                                     },
+                                     {
+                                         "name":  "Git \u0026 GitHub",
+                                         "value":  75
+                                     },
+                                     {
+                                         "name":  "Microsoft Excel",
+                                         "value":  80
+                                     },
+                                     {
+                                         "name":  "Problem Solving",
+                                         "value":  80
+                                     }
+                                 ]
+                   }
+               ],
+    "certifications":  [
+                           {
+                               "name":  "Enterprise Design Thinking Practitioner",
+                               "issuer":  "IBM",
+                               "issuerClass":  "ibm",
+                               "desc":  "Acquired practical skills in User Research, Ideation, prototyping, and design-led team strategies.",
+                               "date":  "2024"
+                           },
+                           {
+                               "name":  "Computer Vision App with Azure",
+                               "issuer":  "Microsoft",
+                               "issuerClass":  "microsoft",
+                               "desc":  "Built and integrated image recognition application using Azure Cognitive Vision services APIs.",
+                               "date":  "2025"
+                           },
+                           {
+                               "name":  "Nano Banana Image Magic with Gemini 2.5 Flash",
+                               "issuer":  "Analytics Vidhya",
+                               "issuerClass":  "av",
+                               "desc":  "Completed hands-on coding training using multimodal capabilities of Gemini 2.5 Flash for image edits and generation.",
+                               "date":  "2025"
+                           },
+                           {
+                               "name":  "Innovation Ambassador",
+                               "issuer":  "Innovation Cell",
+                               "issuerClass":  "innovation",
+                               "desc":  "Selected to lead and organize technology innovation workshops and collaborative engineering projects.",
+                               "date":  "2024"
+                           },
+                           {
+                               "name":  "AI for Business Professionals",
+                               "issuer":  "HP",
+                               "issuerClass":  "hp",
+                               "desc":  "Understood strategic implementation frameworks of Artificial Intelligence and Data Analytics inside enterprises.",
+                               "date":  "2025"
+                           },
+                           {
+                               "name":  "Nicrosoft Excel Specialist",
+                               "issuer":  "Coursera",
+                               "issuerClass":  "coursera",
+                               "desc":  "Proficient in spreadsheet modeling, pivot tables, data visualization, and data structuring.",
+                               "date":  "2025"
+                           }
+                       ],
+    "web3formsKey":  ""
+};
 
     let activeData = {};
     let isEditMode = false;
@@ -559,11 +601,16 @@ document.addEventListener('DOMContentLoaded', () => {
             activeData.about.languages = document.getElementById('about-languages').innerText;
             activeData.about.title = document.getElementById('about-title').innerText;
             activeData.about.desc = document.getElementById('about-desc').innerText;
+            
+            const keyInput = document.getElementById('admin-web3forms-key');
+            if (keyInput) {
+                activeData.web3formsKey = keyInput.value.trim();
+            }
             saveState();
         }
         
-        const shareURL = generateShareURL();
-        document.getElementById('share-link-input').value = shareURL;
+        const configCode = `const defaultData = ${JSON.stringify(activeData, null, 4)};`;
+        document.getElementById('share-link-input').value = configCode;
         document.getElementById('share-feedback').innerText = '';
         openModal('share-modal');
     });
@@ -738,19 +785,38 @@ document.addEventListener('DOMContentLoaded', () => {
         
         try {
             navigator.clipboard.writeText(copyText.value);
-            document.getElementById('share-feedback').innerHTML = "<i class='bx bx-check-circle'></i> Link copied to clipboard!";
+            document.getElementById('share-feedback').innerHTML = "<i class='bx bx-check-circle'></i> Code copied! Paste inside script.js to replace defaultData.";
         } catch (err) {
             console.error('Failed to copy: ', err);
             // Fallback
             copyText.focus();
             document.execCommand('copy');
-            document.getElementById('share-feedback').innerHTML = "<i class='bx bx-check-circle'></i> Link copied to clipboard!";
+            document.getElementById('share-feedback').innerHTML = "<i class='bx bx-check-circle'></i> Code copied! Paste inside script.js to replace defaultData.";
         }
     };
 
     // ==================== FIRST INITIALIZATION ====================
     loadState();
     renderAll();
+
+    // Hide or show the admin panel based on the URL hash
+    function toggleAdminPanelVisibility() {
+        const hash = window.location.hash;
+        const adminPanel = document.querySelector('.admin-panel');
+        if (adminPanel) {
+            if (hash === '#edit' || hash.startsWith('#edit?')) {
+                adminPanel.style.display = 'block';
+            } else {
+                adminPanel.style.display = 'none';
+                if (isEditMode) {
+                    editBtn.click(); // Automatically lock edit mode if we leave the hash
+                }
+            }
+        }
+    }
+
+    toggleAdminPanelVisibility();
+    window.addEventListener('hashchange', toggleAdminPanelVisibility);
 
     // ==================== MOBILE MENU TOGGLE ====================
     const menuIcon = document.querySelector('#menu-icon');

@@ -25,7 +25,7 @@
         </div>
         <div class="admin-actions">
             <button id="edit-btn" class="admin-btn"><i class='bx bx-edit-alt'></i> <span>Edit Mode</span></button>
-            <button id="share-btn" class="admin-btn"><i class='bx bx-share-alt'></i> <span>Copy Share Link</span></button>
+            <button id="share-btn" class="admin-btn"><i class='bx bx-save'></i> <span>Export JS Config</span></button>
             <button id="reset-btn" class="admin-btn btn-danger"><i class='bx bx-reset'></i> <span>Reset Default</span></button>
             <div id="forms-key-container" style="margin-top: 1rem; display: none; text-align: left;">
                 <label for="admin-web3forms-key" style="font-size: 1.15rem; color: var(--text-muted); font-weight: 600; display: block; margin-bottom: 0.5rem;">Web3Forms Access Key:</label>
@@ -349,19 +349,27 @@
 
     <!-- Share Modal -->
     <div id="share-modal" class="modal-overlay">
-        <div class="modal-content glass" style="max-width: 550px;">
+        <div class="modal-content glass" style="max-width: 600px;">
             <div class="modal-header">
-                <h3>Share Your Portfolio</h3>
+                <h3>Export Portfolio Configuration</h3>
                 <i class='bx bx-x close-modal' onclick="closeModal('share-modal')"></i>
             </div>
-            <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.45rem;">Your customized data has been compiled into a compressed web link. Copy this URL and share it with anyone—they will see your portfolio exactly as you've configured it!</p>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.45rem;">
+                To save your edits permanently so that everyone visiting your site sees them:
+            </p>
+            <ol style="color: var(--text-muted); margin-left: 2rem; margin-bottom: 2rem; font-size: 1.4rem; list-style-type: decimal;">
+                <li style="margin-bottom: 0.8rem;">Click the <strong>"Copy JavaScript Code"</strong> button below.</li>
+                <li style="margin-bottom: 0.8rem;">Open your local file <strong>script.js</strong> in a code editor.</li>
+                <li style="margin-bottom: 0.8rem;">Replace the entire <code>const defaultData = { ... };</code> block (at the very top) by pasting the copied code.</li>
+                <li style="margin-bottom: 0.8rem;">Commit and push your changes to your GitHub Repository!</li>
+            </ol>
             <div class="form-group">
-                <div style="display: flex; gap: 10px;">
-                    <input type="text" id="share-link-input" readonly style="flex-grow: 1; padding: 1.2rem; background: var(--bg-color); border: 1px solid var(--primary-color); border-radius: 1rem; color: #fff; font-size: 1.4rem;">
-                    <button type="button" class="btn" onclick="copyShareURL()"><i class='bx bx-copy'></i> Copy</button>
-                </div>
+                <textarea id="share-link-input" readonly rows="8" style="width: 100%; padding: 1.2rem; background: var(--bg-color); border: 1px solid var(--primary-color); border-radius: 1rem; color: #fff; font-family: monospace; font-size: 1.2rem; resize: none;"></textarea>
             </div>
-            <div id="share-feedback" style="margin-top: 10px; font-size: 1.45rem; font-weight: 600; color: #4caf50;"></div>
+            <div style="text-align: right; margin-top: 1.5rem;">
+                <button type="button" class="btn" onclick="copyShareURL()"><i class='bx bx-copy'></i> Copy JavaScript Code</button>
+            </div>
+            <div id="share-feedback" style="margin-top: 10px; font-size: 1.45rem; font-weight: 600; color: #4caf50; text-align: center;"></div>
             <div class="modal-actions" style="margin-top: 2rem;">
                 <button type="button" class="btn btn-outline" style="width: 100%; margin-left: 0;" onclick="closeModal('share-modal')">Close</button>
             </div>
